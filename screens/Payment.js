@@ -257,7 +257,7 @@ export default function Payment(props) {
           <Text
             style={{
               padding: 10,
-              colors: colors.primary,
+              color: colors.primary,
               fontSize: fontsize.h5,
               alignSelf: 'center',
             }}>

@@ -20,7 +20,16 @@ import MyDelivered from './MyDelivered';
 import MyDelivering from './MyDelivering';
 import MyOrder from './MyOrder';
 import MyCancelOrder from './MyCancelOrder';
-
+import Disease from './DiseaseList/Disease';
+import DiseaseList from './DiseaseList/DiseaseList';
+import DetailDisease from './DiseaseList/DetailDisease';
+import Doctor from './DoctorList/Doctor';
+import DoctorList from './DoctorList/DoctorList';
+import DetailDoctor from './DoctorList/DetailDoctor';
+import Service from './ServiceList/Service';
+import ServiceList from './ServiceList/ServiceList';
+import DetailService from './ServiceList/DetailService';
+import Book from './Book';
 export {
   Signin,
   Register,
@@ -44,4 +53,14 @@ export {
   MyDelivering,
   MyOrder,
   MyCancelOrder,
+  Disease,
+  DiseaseList,
+  DetailDisease,
+  Doctor,
+  DoctorList,
+  DetailDoctor,
+  Service,
+  ServiceList,
+  DetailService,
+  Book,
 };

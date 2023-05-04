@@ -76,7 +76,7 @@ export default function TabBottomUser(props) {
           }}>
           <TouchableOpacity
             onPress={() => {
-              navigation.navigate('Cart');
+              navigation.navigate('Book');
             }}>
             <Image
               source={images.schedule}

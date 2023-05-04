@@ -9,20 +9,22 @@ import {
   KeyboardAvoidingView,
   Keyboard,
 } from 'react-native';
-import {images, colors, icons, fontsize} from '../constant';
+import {images, colors, icons, fontsize} from '../../constant';
 import Icon from 'react-native-vector-icons/FontAwesome5';
-import TabBottomUser from './TabBottomUser';
-function NewsList(props) {
-  const {id, tentt, mota, anh} = props.products; //destructuring an object
+import TabBottomUser from '../TabBottomUser';
+function DiseaseList(props) {
+  const {id, tenbenh, anh, gioithieu, trieuchung, idkhoa} = props.products; //destructuring an object
   const navigation = props.navigation;
   return (
     <TouchableOpacity
       onPress={() => {
-        navigation.navigate('DetailNews', {
+        navigation.navigate('DetailDisease', {
           id: id,
-          tentt: tentt,
-          mota: mota,
+          tenbenh: tenbenh,
           anh: anh,
+          gioithieu: gioithieu,
+          trieuchung: trieuchung,
+          idkhoa: idkhoa,
         });
       }}
       style={{
@@ -53,7 +55,7 @@ function NewsList(props) {
             fontSize: fontsize.h4,
             fontWeight: 'bold',
           }}>
-          {tentt}
+          {tenbenh}
         </Text>
         <View
           style={{
@@ -68,10 +70,10 @@ function NewsList(props) {
             fontSize: fontsize.h4,
             height: 95,
           }}>
-          Detail: {mota}
+          Detail: {gioithieu}
         </Text>
       </View>
     </TouchableOpacity>
   );
 }
-export default NewsList;
+export default DiseaseList;

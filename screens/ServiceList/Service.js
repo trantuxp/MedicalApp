@@ -14,13 +14,13 @@ import {
   Button,
 } from 'react-native';
 
-import {images, icons, fontsize, colors, CallURL} from '../constant';
+import {images, icons, fontsize, colors, CallURL} from '../../constant';
 import Icons from 'react-native-vector-icons/FontAwesome5';
 import axios from 'axios';
-import Taskbar from './Taskbar';
-import NewsList from './NewsList';
-import TabBottomUser from './TabBottomUser';
-function News(props) {
+import Taskbar from '../Taskbar';
+import ServiceList from './ServiceList';
+import TabBottomUser from '../TabBottomUser';
+function Service(props) {
   const [data, setdata] = useState([]);
 
   useEffect(() => {
@@ -29,7 +29,7 @@ function News(props) {
 
   const calGetUrl = async () => {
     axios
-      .get(CallURL.URL_gettintuc)
+      .get(CallURL.URL_getdichvu)
       .then(res => {
         // console.log(typeof res.data.data);
         setdata(res.data.data);
@@ -56,7 +56,7 @@ function News(props) {
         style={{
           flex: 10,
         }}>
-        <Taskbar navigation={navigation} title="Tin tức" />
+        <Taskbar navigation={navigation} title="Dịch vụ đặc biệt" />
       </View>
 
       <View
@@ -69,7 +69,7 @@ function News(props) {
             data={data}
             key={data.id}
             renderItem={({item}) => (
-              <NewsList navigation={navigation} products={item} />
+              <ServiceList navigation={navigation} products={item} />
             )}
           />
         </View>
@@ -83,4 +83,4 @@ function News(props) {
     </View>
   );
 }
-export default News;
+export default Service;

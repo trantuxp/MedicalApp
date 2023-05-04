@@ -142,7 +142,7 @@ export default function DrawerContent(props) {
             )}
             label="Bệnh lý"
             onPress={() => {
-              props.navigation.navigate('About');
+              props.navigation.navigate('Disease');
             }}
           />
         </View>
@@ -159,7 +159,7 @@ export default function DrawerContent(props) {
             )}
             label="Dịch vụ đặc biệt"
             onPress={() => {
-              props.navigation.navigate('About');
+              props.navigation.navigate('Service');
             }}
           />
         </View>
@@ -176,7 +176,7 @@ export default function DrawerContent(props) {
             )}
             label="Chuyên gia"
             onPress={() => {
-              props.navigation.navigate('About');
+              props.navigation.navigate('Doctor');
             }}
           />
         </View>

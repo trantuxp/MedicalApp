@@ -11,60 +11,20 @@ import {
 } from 'react-native';
 import {images, colors, icons, fontsize} from '../../constant';
 import Icon from 'react-native-vector-icons/FontAwesome5';
-
-function _getColorFromStatus(amount) {
-  /*
-    if(status.toLowerCase().trim() == 'opening now') {
-        return colors.success
-    } else if(status.toLowerCase().trim() == 'closing soon') {
-        return colors.alert
-    } else if(status.toLowerCase().trim() == 'comming soon') {
-        return colors.warning
-    }
-    return colors.success
-    */
-  return amount > 10
-    ? colors.success
-    : amount > 0
-    ? colors.warning
-    : colors.alert;
-
-  // return status.toLowerCase().trim() == 'opening now' ? colors.success :
-  //         (status.toLowerCase().trim() == 'closing soon' ? colors.alert :
-  //         (status.toLowerCase().trim() == 'comming soon' ? colors.warning : colors.success))
-}
-function ProductItem(props) {
-  const {
-    id,
-    tenthuoc,
-    anh,
-    mota,
-    soluong,
-    dongia,
-    thanhphan,
-    congdung,
-    doituongsd,
-    cachdung,
-    ngay,
-    iddanhmuc,
-  } = props.products; //destructuring an object
+import TabBottomUser from '../TabBottomUser';
+function DoctorList(props) {
+  const {id, tenbacsi, anh, chucvu, mota, idkhoa} = props.products; //destructuring an object
   const navigation = props.navigation;
   return (
     <TouchableOpacity
       onPress={() => {
-        navigation.navigate('DetailProduct', {
+        navigation.navigate('DetailDoctor', {
           id: id,
-          tenthuoc: tenthuoc,
+          tenbacsi: tenbacsi,
           anh: anh,
+          chucvu: chucvu,
           mota: mota,
-          soluong: soluong,
-          dongia: dongia,
-          thanhphan: thanhphan,
-          congdung: congdung,
-          doituongsd: doituongsd,
-          cachdung: cachdung,
-          ngay: ngay,
-          iddanhmuc: iddanhmuc,
+          idkhoa: idkhoa,
         });
       }}
       style={{
@@ -95,7 +55,7 @@ function ProductItem(props) {
             fontSize: fontsize.h4,
             fontWeight: 'bold',
           }}>
-          {tenthuoc}
+          {tenbacsi}
         </Text>
         <View
           style={{
@@ -106,9 +66,9 @@ function ProductItem(props) {
 
         <Text
           style={{
-            height: 95,
             color: colors.inactive,
             fontSize: fontsize.h4,
+            height: 95,
           }}>
           Detail: {mota}
         </Text>
@@ -116,4 +76,4 @@ function ProductItem(props) {
     </TouchableOpacity>
   );
 }
-export default ProductItem;
+export default DoctorList;

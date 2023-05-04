@@ -1,5 +1,5 @@
 <?php  
-	$connect = mysqli_connect("localhost","root","","appnoithat");
+	$connect = mysqli_connect("localhost","root","","medicalapp");
 	
 	// if ($connect) {
 	// 	echo "Kết nối thành công";

@@ -26,6 +26,16 @@ import {
   MyDelivered,
   MyDelivering,
   MyOrder,
+  Disease,
+  DiseaseList,
+  DetailDisease,
+  Doctor,
+  DoctorList,
+  DetailDoctor,
+  Service,
+  ServiceList,
+  DetailService,
+  Book,
 } from '../screens';
 import {
   Getapi_Flatlist,
@@ -62,6 +72,16 @@ const MystackSignin = () => {
       <Stack.Screen name="MyDelivering" component={MyDelivering} />
       <Stack.Screen name="MyOrder" component={MyOrder} />
       <Stack.Screen name="ChatbotScreen" component={ChatbotChatbotScreen} />
+      <Stack.Screen name="Disease" component={Disease} />
+      <Stack.Screen name="DiseaseList" component={DiseaseList} />
+      <Stack.Screen name="DetailDisease" component={DetailDisease} />
+      <Stack.Screen name="Doctor" component={Doctor} />
+      <Stack.Screen name="DoctorList" component={DoctorList} />
+      <Stack.Screen name="DetailDoctor" component={DetailDoctor} />
+      <Stack.Screen name="Service" component={Service} />
+      <Stack.Screen name="ServiceList" component={ServiceList} />
+      <Stack.Screen name="DetailService" component={DetailService} />
+      <Stack.Screen name="Book" component={Book} />
     </Stack.Navigator>
   );
 };
@@ -86,6 +106,16 @@ const MystackRegister = () => {
       <Stack.Screen name="MyDelivering" component={MyDelivering} />
       <Stack.Screen name="MyOrder" component={MyOrder} />
       <Stack.Screen name="ChatbotScreen" component={ChatbotScreen} />
+      <Stack.Screen name="Disease" component={Disease} />
+      <Stack.Screen name="DiseaseList" component={DiseaseList} />
+      <Stack.Screen name="DetailDisease" component={DetailDisease} />
+      <Stack.Screen name="Doctor" component={Doctor} />
+      <Stack.Screen name="DoctorList" component={DoctorList} />
+      <Stack.Screen name="DetailDoctor" component={DetailDoctor} />
+      <Stack.Screen name="Service" component={Service} />
+      <Stack.Screen name="ServiceList" component={ServiceList} />
+      <Stack.Screen name="DetailService" component={DetailService} />
+      <Stack.Screen name="Book" component={Book} />
     </Stack.Navigator>
   );
 };
@@ -146,6 +176,16 @@ export default function MainNavigator() {
         <Drawer.Screen name="MyDelivering" component={MyDelivering} />
         <Drawer.Screen name="MyOrder" component={MyOrder} />
         <Drawer.Screen name="ChatbotScreen" component={ChatbotScreen} />
+        <Drawer.Screen name="Disease" component={Disease} />
+        <Drawer.Screen name="DiseaseList" component={DiseaseList} />
+        <Drawer.Screen name="DetailDisease" component={DetailDisease} />
+        <Drawer.Screen name="Doctor" component={Doctor} />
+        <Drawer.Screen name="DoctorList" component={DoctorList} />
+        <Drawer.Screen name="DetailDoctor" component={DetailDoctor} />
+        <Drawer.Screen name="Service" component={Service} />
+        <Drawer.Screen name="ServiceList" component={ServiceList} />
+        <Drawer.Screen name="DetailService" component={DetailService} />
+        <Drawer.Screen name="Book" component={Book} />
       </Drawer.Navigator>
     </NavigationContainer>
   );

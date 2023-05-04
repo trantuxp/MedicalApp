@@ -5,20 +5,20 @@
 	<?php
 	$query = "SELECT * FROM tintuc";
 	$data = mysqli_query($connect,$query);
-	$mangcuahang= array();
+	$mangtintuc= array();
 	while($row =mysqli_fetch_assoc($data)){
-		array_push($mangcuahang, new cuahang(
+		array_push($mangtintuc, new cuahang(
 			$row['id'],
 			$row['tentt'],
 			$row['mota'],
 			$row['anh']));
 	}
-	$mangcuahang = [ 
+	$mangtintuc = [ 
 	
-		"data" => $mangcuahang 
+		"data" => $mangtintuc 
 	];
 
-	echo json_encode($mangcuahang);
+	echo json_encode($mangtintuc);
 	class cuahang{
 		function __construct($id,$tentt,$mota,$anh){
 			$this->id=$id;

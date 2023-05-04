@@ -1,4 +1,4 @@
-const HOST = 'http://192.168.1.71/serverMedicalApp';
+const HOST = 'http://192.168.1.9/serverMedicalApp';
 export default {
   URL_getcart: HOST + '/getcart.php',
   URL_spmoinhat: HOST + '/getspmoinhat.php',
@@ -27,4 +27,8 @@ export default {
   URL_capnhatdh: HOST + '/capnhatdonhang.php',
   URL_huydh: HOST + '/huydon.php',
   URL_gettimkiem: HOST + '/gettimkiem.php',
+  URL_getbenh: HOST + '/getbenh.php',
+  URL_getdichvu: HOST + '/getdichvu.php',
+  URL_getbacsi: HOST + '/getbacsi.php',
+  URL_themlichkham: HOST + '/themlichkham.php',
 };
