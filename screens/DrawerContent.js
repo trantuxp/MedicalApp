@@ -65,7 +65,7 @@ export default function DrawerContent(props) {
                   marginLeft: 15,
                   flexDirection: 'column',
                 }}>
-                <Title style={styles.title}>MTAShop</Title>
+                <Title style={styles.title}>MTAHospital</Title>
               </View>
             </View>
           </TouchableOpacity>

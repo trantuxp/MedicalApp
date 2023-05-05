@@ -87,7 +87,7 @@ export default function AddProduct() {
                 console.log(tensanpham);
               }}
               style={{borderWidth: 1, borderRadius: 40, height: '80%'}}
-              placeholder="Đồ chơi trẻ em"
+              placeholder="Thuốc"
               placeholderTextColor={colors.placeholder}
             />
           </View>

@@ -75,7 +75,7 @@ export default function About() {
                   fontSize: fontsize.h4,
                   color: colors.black,
                 }}>
-                Tên shop: ETMBaby
+                Tên shop: MTAHospital
               </Text>
             </View>
 
@@ -137,7 +137,7 @@ export default function About() {
                   fontSize: fontsize.h4,
                   color: colors.black,
                 }}>
-                Số điện thoại: 0764609999
+                Số điện thoại: 0845195357
               </Text>
             </View>
 

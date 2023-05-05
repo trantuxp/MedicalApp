@@ -26,7 +26,7 @@ export default function ManagerShop() {
 
   const calGetUrl = async () => {
     axios
-      .get(CallURL.URL_getch)
+      .get(CallURL.URL_getbenhvien)
 
       .then(res => {
         // console.log(typeof res.data.data);
@@ -43,7 +43,7 @@ export default function ManagerShop() {
   };
   const UpdateShop = async (tenshop, diachi, sodt, email) => {
     axios
-      .get(CallURL.URL_suach, {
+      .get(CallURL.URL_suabenhvien, {
         params: {
           tenshop: tenshop,
           diachi: diachi,
@@ -74,7 +74,7 @@ export default function ManagerShop() {
     <View style={{flex: 1, backgroundColor: colors.white}}>
       <View style={{flex: 20, alignItems: 'center', justifyContent: 'center'}}>
         <Text style={{fontSize: fontsize.h3, color: colors.black}}>
-          Add Product Form
+          Hospital
         </Text>
       </View>
       <View style={{flex: 50}}>
@@ -110,7 +110,7 @@ export default function ManagerShop() {
                     }}
                     defaultValue={item.tenshop.toString()}
                     style={{borderWidth: 1, borderRadius: 40, height: '80%'}}
-                    placeholder="Đồ chơi trẻ em"
+                    placeholder=""
                     placeholderTextColor={colors.placeholder}
                   />
                 </View>

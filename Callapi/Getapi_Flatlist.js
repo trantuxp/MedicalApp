@@ -166,7 +166,7 @@ function Getapi_Flatlist(props) {
                   onPress={() => {
                     navigation.navigate('RepairProduct', {
                       id: item.id,
-                      tensanpham: item.tenhang,
+                      tensanpham: item.tenthuoc,
                       soluong: item.soluong,
                       gia: item.gia,
                       anh: item.anh,
@@ -186,7 +186,7 @@ function Getapi_Flatlist(props) {
                   onPress={() => {
                     navigation.navigate('RepairProduct', {
                       id: item.id,
-                      tensanpham: item.tenhang,
+                      tensanpham: item.tenthuoc,
                       soluong: item.soluong,
                       gia: item.dongia,
                       anh: item.anh,
@@ -194,7 +194,7 @@ function Getapi_Flatlist(props) {
                       iddanhmuc: item.iddanhmuc,
                     });
                   }}>
-                  <Text>{item.tenhang}</Text>
+                  <Text style={{width: 300}}>{item.tenthuoc}</Text>
                 </TouchableOpacity>
               </View>
               <View
